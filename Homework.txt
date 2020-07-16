@@ -1,0 +1,14 @@
+cd
+mkdir first
+cd first
+echo "print("1")" > first.py
+cd ..
+mkdir second
+cd second
+echo "print("2")" > second.py
+mv second.py ../first
+cd ..
+rm -r second
+mv first first_second
+rm -r first_second
+	
